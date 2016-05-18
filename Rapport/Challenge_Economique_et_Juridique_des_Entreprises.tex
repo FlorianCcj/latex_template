@@ -1,0 +1,70 @@
+\documentclass[12pt,a4paper, tikz]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{times}
+
+%permet d'ajouter le pied de page custom
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+\usepackage{lastpage}
+
+\usepackage{tabularx}
+
+%symbole euro
+\usepackage{eurosym}
+
+\usepackage{url}
+
+%interligne (http://aidelatex.blogspot.fr/2010/07/interligne.html)
+\usepackage{setspace}
+\onehalfspacing
+
+%image
+\usepackage{graphicx}
+\graphicspath{{./img/}}
+
+%\rfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+\renewcommand{\footrulewidth}{1pt}
+\fancyfoot[L]{}
+\fancyfoot[C]{\textbf{Page \thepage \hspace{1pt} of \pageref{LastPage}}} 
+\fancyhead[L]{} 
+\fancyhead[C]{
+\begin{tabular}{c}
+Hugo \textsc{Dardenne} -- Florian \textsc{Palmade} -- Alexis \textsc{Jamin}\\
+Clement \textsc{Roux} -- Habib \textsc{Mlayah} 3C
+\end{tabular}
+} 
+\fancyhead[R]{} 
+%--------------------------------------------------------------------------------------------------
+%-----------------------------------------------SWOT-----------------------------------------------
+%--------------------------------------------------------------------------------------------------
+
+
+%--------------------------------------------------------------------------------------------------
+% ----------------------------------------END SWOT-----------------------------------------------
+%--------------------------------------------------------------------------------------------------
+
+\title{Rapport, Challenge Economique et juridique des entreprises}
+\date{Vendredi 15 Janvier 2016}
+\author{Hugo \textsc{Dardenne} 3CT-- Florian \textsc{Palmade} 3CT -- Alexis \textsc{Jamin} 3CT \\ 
+Clement \textsc{Roux} 3CI -- Habib \textsc{Mlayah} 3CB}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy} 
+\tableofcontents
+\thispagestyle{fancy} 
+
+\include{ch1-Intro}
+\include{ch2-Droit_du_travail}
+\include{ch3-Propriete_intellectuelle}
+\include{ch4-Droit_des_new_tech}
+\include{ch5-Intel_economique}
+\include{ch6-Conclusion}
+% \include{ch7-De_la_merde}
+
+\end{document}
