@@ -1,0 +1,44 @@
+\chapter*{Introduction}
+\thispagestyle{fancy} 
+
+\section{Section avec figure}
+To have an environment generating a distortion we have to had two different medium with a transparent separation.\\
+cf. figure 1
+\begin{figure}
+\centering
+%\includegraphics[scale=1]{optique}
+\caption{optique}
+\end{figure}
+\begin{landscape}
+\begin{figure}
+\centering
+%\includegraphics[scale=0.35]{aaa_class_diagram}
+\caption{Class diagram : System}
+\end{figure}
+\end{landscape}
+
+\section{Section avec formule mathematique}
+The angles $\theta_{i}$ and $\theta_{t}$ can be obtained from Snell's law
+\begin{displaymath}
+\begin{array}{l}
+n_{i}\sin(\theta_{i}) = n_{t}\sin(\theta_{t})\\
+with\\
+n_{x}: \text{IOR of the medium}\\
+\theta_{x}: \text{angle of the ray in the medium}
+\end{array}
+\end{displaymath}
+
+\section{Code}
+\lstset{language=Matlab}
+\begin{lstlisting}[frame=single]
+C = [
+	-1,0;
+	0,-1;
+	300,600;
+	900,1200;
+	300 300];
+b = [0;0;4800000;10800000;3300000];
+p = [-50;-80] ;
+
+[x,lagr,f]=linpro(p,C,b)
+\end{lstlisting}

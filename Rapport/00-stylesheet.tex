@@ -1,0 +1,46 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{times}
+
+%% mise en page %%
+
+%permet d'ajouter le pied de page custom
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+\usepackage{lastpage}
+
+% pour mise en paysage
+\usepackage{lscape} 
+% pour tableau qui s'adapte a la taille de la page
+\usepackage{tabularx}
+%interligne (http://aidelatex.blogspot.fr/2010/07/interligne.html)
+\usepackage{setspace}
+\onehalfspacing
+
+%% pour code %%
+\usepackage{listings}
+% pour retour a la ligne dans le code
+\usepackage{xcolor} 
+
+%% image %%
+\usepackage{graphicx}
+\graphicspath{{./img/}}
+
+%% en-tete et pied de page %%
+
+%\rfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+\renewcommand{\footrulewidth}{1pt}
+\fancyfoot[L]{}
+\fancyfoot[C]{\textbf{Page \thepage \hspace{1pt} of \pageref{LastPage}}} 
+\fancyhead[L]{} 
+\fancyhead[C]{
+\begin{tabular}{c}
+Florian \textsc{Palmade} Ing3CT\\
+Intelligence artificielle, TP
+\end{tabular}
+} 
+\fancyhead[R]{} 
